@@ -10,7 +10,7 @@ Use strftime in twig
 
 # Installation
 ```bash
-composer require teraone/twig-strftime-extension dev-master
+composer require teraone/twig-strftime-extension
 ```
 
 Add the extension to your twig environment

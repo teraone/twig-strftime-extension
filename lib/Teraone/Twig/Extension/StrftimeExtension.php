@@ -4,7 +4,7 @@ namespace Teraone\Twig\Extension;
 
 use DateTime;
 use Twig_Environment;
-use Twig_Filter_Method;
+use Twig_SimpleFilter;
 
 /**
  * Cloudinary twig extension.
@@ -25,7 +25,7 @@ class StrftimeExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            'strftime' => new Twig_Filter_Method($this, 'strftime',
+            'strftime' => new Twig_SimpleFilter('strftime', $this,
                 array('needs_environment' => true)),
         );
     }

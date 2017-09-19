@@ -25,7 +25,7 @@ class StrftimeExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            'strftime' => new Twig_SimpleFilter('strftime', $this,
+            new Twig_SimpleFilter('strftime', [$this, 'strftime'],
                 array('needs_environment' => true)),
         );
     }

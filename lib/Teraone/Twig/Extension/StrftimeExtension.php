@@ -32,12 +32,12 @@ class StrftimeExtension extends \Twig_Extension
 
     /**
      * @param Twig_Environment $env
-     * @param DateTime $date
+     * @param DateTime|string $date
      * @param string $format
      * @param mixed $timezone
      * @return string
      */
-    public function strftime(Twig_Environment $env, DateTime $date,
+    public function strftime(Twig_Environment $env, $date,
                              $format = "%B %e, %Y %H:%M", $timezone = null)
     {
         $date = twig_date_converter($env, $date, $timezone);

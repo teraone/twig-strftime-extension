@@ -6,6 +6,8 @@ Use strftime in twig
 
 {{ date()|strftime('%I:%M:%S %p') }} //-> Display the current time
 
+{{ '2017-12-01'|strftime('%d %B %Y') }} //-> Accept string filtering (compatible with strtotime)
+
 ```
 
 # Installation
